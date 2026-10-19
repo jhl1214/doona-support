@@ -13,7 +13,7 @@
     <main><article class="content">
       <p class="eyebrow">Privacy Policy</p>
       <h1>개인정보처리방침</h1>
-      <div class="meta">시행일: 2026년 10월 13일 · 운영자: Lee Junho</div>
+      <div class="meta">시행일: 2026년 10월 19일 · 운영자: Lee Junho</div>
       <p>두나(이하 ‘앱’)는 가계부 기록을 기본적으로 사용자의 기기에 저장합니다. 이 방침은 기기 내 처리와 사용자가 선택하는 동기화·백업·문의, 이용 분석 및 광고에서 처리되는 데이터를 구분해 설명합니다.</p>
       <h2>1. 기기 내 기록과 백업 파일</h2>
       <p>수입, 지출, 예산, 카테고리, 예정 지출, 계좌, 이체, 변경 기록과 앱 설정은 기본적으로 기기에 저장됩니다. 일반 기록을 운영자가 자동으로 모두 수집하는 구조가 아닙니다. 파일 백업을 내보내거나 복원할 때에는 저장 위치와 공유 대상을 사용자가 선택합니다.</p>
@@ -24,6 +24,7 @@
       <p>로그인 후 사용자가 수동 클라우드 백업을 실행하면 가계부 백업 파일과 복원에 필요한 메타데이터·암호화 키가 Firebase/Google Cloud에 저장됩니다. 백업은 전송 전에 암호화하고 해당 계정으로 복원하도록 접근을 제한합니다. 백업 복원과 무결성 검증을 위해 서버에서 복호화 키도 함께 관리합니다.</p>
       <p>클라우드 백업은 사용자 계정에 연결해 유지하며 새 백업으로 교체할 수 있습니다. 설정의 계정 메뉴에서 앱 계정을 삭제하면 해당 계정의 클라우드 백업도 삭제 처리됩니다. 기기 기록, 사용자가 내보낸 파일, 개인 iCloud 데이터와 문의 자료는 별도로 관리됩니다.</p>
       <h2>4. 공개 문의와 선택적 진단 데이터</h2>
+      <p>문의에서 ‘답변받기’를 선택하면 확인·입력한 회신 이메일을 비공개 Firebase/Google Cloud 접수 기록에 저장하고 해당 문의 답변에만 사용합니다. 로그인 이메일을 미리 표시할 수 있지만 계정 이메일은 변경하지 않으며, 답변을 원하지 않으면 주소를 전송하지 않습니다. 회신 이메일은 공개 GitHub 이슈·이용 분석·광고에 포함하지 않습니다. 이슈의 관리자용 접수 링크는 Google 로그인과 기존 관리자 권한이 필요하며 링크만으로 이메일을 볼 수 없습니다.</p>
       <p>앱의 문의 기능으로 제출한 제목·내용, 앱 버전, 기기 종류, 운영체제, 언어·지역 정보는 문제 해결을 위해 GitHub 공개 지원 이슈에 게시됩니다. 진단 데이터를 첨부한 경우 자료 연결용 참조 ID도 공개 글에 표시됩니다. 이메일, 계좌번호나 실제 금융 기록을 공개 문의에 적지 마세요. 비공개 문의는 아래 연락처를 이용해 주세요.</p>
       <p>사용자가 진단 데이터 첨부를 직접 선택한 경우에만 현재 가계부 데이터베이스와 일관된 분석에 필요한 보조 파일이 비공개 Firebase/Google Cloud Storage에 전송됩니다. 파일에는 수입, 지출, 예산, 카테고리, 계좌, 이체 등 실제 금융 기록과 파일 안에 저장된 정보가 포함될 수 있습니다. 진단 파일과 다운로드 링크는 공개 이슈에 첨부하지 않습니다.</p>
       <p>진단 데이터는 제보한 문제를 재현·해결하기 위해 사용하며 Analytics나 광고 데이터로 보내지 않습니다. 문의·진단 연결 및 중복 제출·남용 방지를 위해 제출 식별자, 참조 ID, 설치 식별자의 해시, 전송 시각, 파일 정보와 처리 상태를 서버에서 처리합니다. 진단 전송에는 앱 계정 로그인이 필수가 아니므로 로그인 이메일만으로 진단 자료가 자동 연결되지는 않습니다.</p>
@@ -41,6 +42,7 @@
         <li>기기 기록과 내보낸 파일: 사용자가 해당 앱·파일 저장 위치에서 관리합니다. iCloud 사본과 외부 백업 파일은 앱 제거만으로 모두 삭제되지 않습니다.</li>
         <li>계정·클라우드 백업: 계정 이용과 복원을 위해 보유하며 계정 삭제 시 삭제 처리합니다. 처리 중 작업과 서비스의 백업·복구 사본은 제공자 정책에 따라 정리될 수 있습니다.</li>
         <li>진단 파일: 7일 보관 정책을 적용하며, 그 전에 삭제를 원하면 아래 연락처로 요청할 수 있습니다. 보관 기간이 지나면 자료를 찾지 못할 수 있습니다. 서비스의 삭제 처리와 복구 사본 정리는 즉시 완료되지 않을 수 있습니다.</li>
+        <li>회신 이메일: 문의 접수 시점부터 30일 보관 정책을 적용하고 비공개 접수 문서를 자동 만료 처리합니다. 서비스 삭제는 비동기여서 정확한 시각을 보장하지 않습니다. 그 전에 삭제를 원하면 아래 비공개 연락처로 요청해 주세요. 실제 이메일로 주고받은 문의는 별도 문의 처리 기록입니다.</li>
         <li>문의 처리 기록: 공개 GitHub 글과 진단 연결·중복 제출·남용 방지용 메타데이터는 진단 파일과 별개입니다. 파일 삭제가 이 기록의 동시 삭제를 의미하지는 않습니다. 삭제 요청 시 원하는 범위를 알려 주세요.</li>
         <li>이용 분석·광고·비공개 문의: 각 서비스의 설정·정책과 문의 처리에 필요한 범위에서 보유하며, 관련 요청은 아래 연락처로 문의할 수 있습니다.</li>
       </ul>
@@ -50,12 +52,12 @@
       <p>기기 기록은 앱에서 수정·삭제하고 백업 파일로 내보낼 수 있습니다. 앱 계정은 설정에서 삭제할 수 있습니다. 전송한 진단 데이터·계정 또는 Analytics 등 서비스에서 처리하는 개인정보의 열람·삭제 문의와 비공개 문의는 <a href="mailto:devGChobo@gmail.com">devGChobo@gmail.com</a>로 보내 주세요. 기기 안에만 있는 기록을 운영자가 원격으로 열람하거나 삭제할 수는 없습니다.</p>
       <p class="notice">진단 데이터 관련 요청에는 문의 글 주소, 참조 ID, 대략적인 전송 시각과 요청 범위를 알려 주세요. 문의 등록에 실패했다면 전송 시각과 앱 버전·기기를 알려 주세요. 계정 관련 요청에는 로그인 이메일을 비공개 메일로 알려 주세요. 자료 특정과 본인 확인을 위한 최소한의 추가 확인을 요청할 수 있습니다. 참조 ID만으로 본인 여부를 확인하지 않으며, 개인정보를 공개 글에 추가하지 마세요. 비밀번호·인증 코드·계좌번호·거래 내역·데이터베이스 파일은 이메일에 첨부하지 마세요.</p>
       <h2>11. 방침 변경</h2>
-      <p>기능이나 데이터 처리 방식이 바뀌면 이 페이지와 시행일을 갱신합니다. 중요한 변경은 앱 또는 이 페이지를 통해 안내합니다. 이번 개정은 로그인·클라우드 백업·iCloud·두나 AI·광고 및 진단 데이터 처리 안내를 현재 기능에 맞춰 명확히 한 것입니다.</p>
+      <p>기능이나 데이터 처리 방식이 바뀌면 이 페이지와 시행일을 갱신합니다. 중요한 변경은 앱 또는 이 페이지를 통해 안내합니다. 이번 개정은 선택적 회신 이메일의 수집 목적, 비공개 보관, 30일 보관 정책과 관리자 확인 경로를 추가한 것입니다.</p>
       <hr>
       <section lang="en">
       <p class="eyebrow">English</p>
       <h2>Privacy Policy</h2>
-      <div class="meta">Effective: October 13, 2026 · Operator: Lee Junho</div>
+      <div class="meta">Effective: October 19, 2026 · Operator: Lee Junho</div>
       <p>Doona stores ledger records on your device by default. This policy distinguishes local processing from optional sync, backups, support, analytics, and advertising.</p>
       <h3>1. Local records and exported backups</h3>
       <p>Income, expenses, budgets, categories, scheduled expenses, accounts, transfers, change history, and settings are stored on your device by default. The operator does not automatically collect all ledger records. You choose where exported backups are stored or shared.</p>
@@ -65,6 +67,7 @@
       <p>Core ledger features work without an app account. Apple or Google sign-in uses Firebase Authentication to process account identifiers, the sign-in provider, supplied name/email, and authentication information.</p>
       <p>A manual cloud backup uploads an encrypted ledger backup and restoration metadata, including encryption keys, to Firebase/Google Cloud. Access is restricted to the account. Keys are also processed on the server for restoration and validation; this is not end-to-end encryption that prevents operator decryption. Backups are retained for account use and restoration, can be replaced by a new backup, and are subject to deletion when you delete the app account in Settings. Local records, exported files, private iCloud data, and support materials are separate.</p>
       <h3>4. Public support and optional diagnostics</h3>
+      <p>If you select Receive a reply, the reply email you confirm or enter is stored in a private Firebase/Google Cloud support record and used only to respond to that inquiry. A sign-in email may be prefilled, but your account email is not changed. No address is sent if you do not request a reply. The reply email is not included in public GitHub issues, analytics, or advertising. The administrator link in an issue requires Google sign-in and existing project permissions; the link itself does not grant access to the address.</p>
       <p>In-app support submissions publish your title/message and app version, device, operating system, and language/region to public GitHub Issues. An attached diagnostic upload adds a public reference ID. Do not include personal or financial information in public posts; use the private contact below.</p>
       <p>Only when you explicitly select diagnostic attachments are the current ledger database and companion files uploaded to private Firebase/Google Cloud Storage. These files may contain actual financial records and other information stored in the files. Diagnostic files and download links are not attached to public issues. They are used to reproduce and resolve the reported problem, not for Analytics or advertising.</p>
       <p>Submission IDs, diagnostic reference IDs, hashes of installation IDs, timestamps, file information, and processing state are handled to link requests, prevent duplicate submissions, and prevent abuse. Diagnostic submission does not require an app account, so a sign-in email does not automatically identify an upload.</p>
@@ -80,6 +83,7 @@
         <li>Local records and exports are managed in the app or their file locations. Removing the app does not remove every iCloud copy or external backup.</li>
         <li>Account data and cloud backups are retained for account use/restoration and are subject to deletion on account deletion. Pending operations and provider backup/recovery copies may be cleared according to provider policies.</li>
         <li>Diagnostic files follow a seven-day retention policy. You can request earlier deletion below; files may no longer be available after retention. Service deletion and recovery-copy removal may not finish immediately.</li>
+        <li>Reply email records follow a 30-day retention policy from submission and expire automatically. Service deletion is asynchronous and not guaranteed at an exact instant. You may request earlier deletion through the private contact below. Actual email correspondence remains a separate support record.</li>
         <li>Public GitHub posts and request-linking, deduplication, and anti-abuse metadata are separate from diagnostic files. Deleting a file does not automatically delete these records; specify your request’s scope.</li>
         <li>Analytics, advertising, and private correspondence are retained according to service settings/policies and support needs. Contact us for related requests.</li>
       </ul>
@@ -89,7 +93,7 @@
       <p>You can edit/delete local records, export backups, and delete the app account in Settings. For private inquiries or access/deletion requests regarding uploaded diagnostics, accounts, Analytics, or other processed personal data, contact <a href="mailto:devGChobo@gmail.com">devGChobo@gmail.com</a>. The operator cannot remotely access or delete records kept only on your device.</p>
       <p class="notice">For diagnostic requests, include the issue URL, reference ID, approximate upload time, and requested scope. If issue submission failed, provide the time, app version, and device instead. For account requests, provide the sign-in email privately. Minimal additional information may be needed to locate data and verify ownership; a reference ID alone does not prove ownership. Do not add personal information to public issues or email passwords, verification codes, account numbers, transaction records, or database files.</p>
       <h3>11. Changes</h3>
-      <p>We update this page and its effective date when features or processing change, and communicate material changes in the app or on this page. This revision clarifies current sign-in, cloud backup, iCloud, Doona AI, advertising, and diagnostic handling.</p>
+      <p>We update this page and its effective date when features or processing change, and communicate material changes in the app or on this page. This revision adds optional reply email handling, private storage, a 30-day retention policy, and the administrator lookup path.</p>
       </section>
     </article></main>
     <footer>Copyright © 2020–2026 Lee Junho. All rights reserved.</footer>
